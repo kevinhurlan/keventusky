@@ -1,0 +1,140 @@
+body{
+    background-color: rgb(255, 183, 0);
+}
+    
+
+.container{
+    background-color: aqua;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-style: oblique;
+    padding: 10px 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.content{
+    background-color: rgb(152, 140, 255);
+    display: flex;
+    flex-direction: column;
+    margin-left: 79%;
+    margin-right: 12%;
+    height: 416px;
+    width: 25%;
+    position: absolute;
+    z-index: 10;
+    overflow: hidden;
+}
+.content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.contained{
+    background-color: lightyellow;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-style: oblique;
+    padding: 10px 10px;
+    margin-bottom: 25px;
+    margin-top: 0 ;
+    position: absolute;
+    height: 395px;
+} 
+
+.caja1{
+    background-color: magenta;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 415px;
+    position: absolute;
+}
+footer{
+    background-color: orange;
+    margin-bottom: 30% ;
+    margin-top: 95%;
+    text-align: center;
+}
+
+/* ========================================
+    Diseño responsivo
+   ========================================
+   
+/* Para tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .container{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 14px;
+    }
+    
+    .content{
+        width: 40%;
+        margin-left: 50%;
+        height: 250px;
+    }
+    .contained{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: auto;
+        height: auto;
+        font-size: 12px;
+    }
+    .caja1 {
+        width: 40%;
+        height: auto;
+    }
+    .caja1 ul{
+        padding: 10px;
+    }
+}
+/* 📱 Para móviles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    h2, h3, h4 {
+        font-size: 14px;
+    }
+    /* El header se adapta al ancho completo*/
+    .content {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 200px;
+        position: relative; /* ya no es absoluto en movil */
+    }
+    .contained{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: auto;
+        height: auto;
+        position: relative;
+        font-size: 11px;
+    }
+    .caja1 {
+        width: 80%;
+        margin-left: 10%;
+        position: relative;
+        height: auto;
+    }
+    .caja1 ul{
+        padding: 5px;
+    }
+    footer{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+}
