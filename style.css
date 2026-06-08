@@ -1,7 +1,11 @@
 body{
     background-color: rgb(255, 183, 0);
 }
+
+.responsive{
     
+    border-radius: 2%;
+}
 
 .container{
     background-color: aqua;
@@ -14,16 +18,18 @@ body{
     margin-top: 25px;
 }
 .content{
-    background-color: rgb(152, 140, 255);
+    background-color: rgb(255, 183, 0);
     display: flex;
     flex-direction: column;
     margin-left: 79%;
     margin-right: 12%;
     height: 416px;
-    width: 25%;
+    max-width: 400px;
+    width: 100%;
     position: absolute;
     z-index: 10;
     overflow: hidden;
+    border-radius: 1em;
 }
 .content img{
     width: 100%;
@@ -66,29 +72,93 @@ footer{
 /* Para tablets (max-width: 768px) */
 @media screen and (max-width: 768px) {
     .container{
+        max-width: 100%;
+        width: auto;
+        height: auto;
         margin-left: 10%;
         margin-right: 10%;
-        font-size: 14px;
+        padding: 20% 20%;
+        margin-top: 20%;
+        margin-bottom: 40%;
+        font-size: 24px;
+        border-radius: 2em;
     }
     
-    .content{
-        width: 40%;
-        margin-left: 50%;
-        height: 250px;
+    .img{
+        display: block;
+        margin: 0 auto;
     }
+        .content {
+        max-width: 100%;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 40%;
+        margin-bottom: 40%;
+        width: auto;
+        position: relative;
+        }
     .contained{
         margin-left: 10%;
         margin-right: 10%;
         width: auto;
         height: auto;
-        font-size: 12px;
+        font-size: 32px;
+        position: relative;
+        margin-top: 40%;
+        margin-bottom: 40%;
     }
     .caja1 {
-        width: 40%;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: auto;
         height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 40%;
+        margin-bottom: 40%;
+        position: relative;
+        border-radius: 2em;
     }
     .caja1 ul{
-        padding: 10px;
+        padding: auto;
+        text-align: left;
+        font-size: 28px;
+    }
+    .btn{
+
+        display: inline-block; 
+        padding: 15px 30px; /* Aumenta el área de clic (arriba/abajo, izquierda/derecha) */
+        font-size: 28px;     /* Aumenta el tamaño del texto */
+        min-width: 200px;   /* Fuerza un ancho mínimo para tablets */
+        text-align: center;
+        border-radius: 1em;
+    }
+
+    .btn1{
+
+        display: inline-block; 
+        padding: 15px 30px; /* Aumenta el área de clic (arriba/abajo, izquierda/derecha) */
+        font-size: 28px;     /* Aumenta el tamaño del texto */
+        min-width: 200px;   /* Fuerza un ancho mínimo para tablets */
+        text-align: center;
+        border-radius: 1em;
+}
+
+    .btn2{
+
+        display: inline-block; 
+        padding: 15px 30px; /* Aumenta el área de clic (arriba/abajo, izquierda/derecha) */
+        font-size: 28px;     /* Aumenta el tamaño del texto */
+        min-width: 200px;   /* Fuerza un ancho mínimo para tablets */
+        text-align: center;
+        border-radius: 1em;
+}
+    .footer{
+        margin-top: 0%;
+        margin-bottom: 20%;
+        font-size: 18px;
     }
 }
 /* 📱 Para móviles (max-width: 480px) */
@@ -136,5 +206,4 @@ footer{
     footer{
         margin-top: 20px;
         font-size: 10px;
-    }
-}
+    }}
