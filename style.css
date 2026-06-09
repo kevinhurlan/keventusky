@@ -3,8 +3,9 @@ body{
 }
 
 .responsive{
-    
-    border-radius: 2%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 
 .container{
@@ -163,47 +164,105 @@ footer{
 }
 /* 📱 Para móviles (max-width: 480px) */
 @media screen and (max-width: 480px) {
-    body{
-        display: flex;
-        flex-direction: column;
-    }
     .container{
-        margin-left: 5%;
-        margin-right: 5%;
+        max-width: 480px;
+        width: auto;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 20% 20%;
+        margin-top: 20%;
+        margin-bottom: 40%;
+        font-size: 16px;
+        border-radius: 2em;
+    }
+    
+    .img{
+        display: block;
+        margin: 0 auto;
+    }
+        .content {
+        max-width: 480px;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 40%;
+        margin-bottom: 40%;
+        width: auto;
+        position: relative;
+        }
+    .contained{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: auto;
+        height: auto;
+        font-size: 26px;
+        position: relative;
+        margin-top: 40%;
+        margin-bottom: 40%;
+    }
+    .caja1 {
+        display: block;
+        margin: 0 auto;
+        max-width: 480px;
+        width: auto;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 40%;
+        margin-bottom: 40%;
+        position: relative;
+        border-radius: 2em;
+    }
+    .caja1 ul{
+        padding: auto;
+        text-align: left;
         font-size: 12px;
     }
+    .btn{
+
+        display: inline-block; 
+        padding: 15px 30px; /* Aumenta el área de clic (arriba/abajo, izquierda/derecha) */
+        font-size: 10px;     /* Aumenta el tamaño del texto */
+        min-width: 200px;   /* Fuerza un ancho mínimo para tablets */
+        text-align: center;
+        border-radius: 1em;
+    }
+
+    .btn1{
+
+        display: inline-block; 
+        padding: 15px 30px; /* Aumenta el área de clic (arriba/abajo, izquierda/derecha) */
+        font-size: 10px;     /* Aumenta el tamaño del texto */
+        min-width: 200px;   /* Fuerza un ancho mínimo para tablets */
+        text-align: center;
+        border-radius: 1em;
+}
+
+    .btn2{
+
+        display: inline-block; 
+        padding: 15px 30px; /* Aumenta el área de clic (arriba/abajo, izquierda/derecha) */
+        font-size: 10px;     /* Aumenta el tamaño del texto */
+        min-width: 200px;   /* Fuerza un ancho mínimo para tablets */
+        text-align: center;
+        border-radius: 1em;
+}
+    .footer{
+        margin-top: 0%;
+        margin-bottom: 20%;
+        font-size: 18px;
+    }
+
+    
     h1 {
         font-size: 18px;
     }
     h2, h3, h4 {
         font-size: 14px;
     }
+}
     /* El header se adapta al ancho completo*/
-    .content {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        height: 200px;
-        position: relative; /* ya no es absoluto en movil */
-    }
-    .contained{
-        margin-left: 5%;
-        margin-right: 5%;
-        width: auto;
-        height: auto;
-        position: relative;
-        font-size: 11px;
-    }
-    .caja1 {
-        width: 80%;
-        margin-left: 10%;
-        position: relative;
-        height: auto;
-    }
-    .caja1 ul{
-        padding: 5px;
-    }
-    footer{
-        margin-top: 20px;
-        font-size: 10px;
-    }}
+
+
+    
